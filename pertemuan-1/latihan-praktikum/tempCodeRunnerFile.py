@@ -1,41 +1,22 @@
-#The while loops
-#Dengan while loops, kita dapat mengeksekusi serangkaian pernyataan selama suatu kondisi benar.
-
-#contoh
-i = 1
-while i < 6:
-  print(i)
-  i += 1
-
-#the break statement
-#kita dapat menghentikan loops meskipun kondisi while benar
-
-#contoh
-i = 1
-while i < 6:
-  print(i)
-  if i == 3:
-    break
-  i += 1
-
-#the continue statement
-#kita dapat menghentikan iterasi saat ini dan melanjutkan ke iterasi berikutnya
-
-#contoh
-i = 0
-while i < 6:
-  i += 1
-  if i == 3:
-    continue
-  print(i)
-
-#the else statement
-#kita dapat menjalankan blok kode sekali saja ketika kondisi tersebut tidak lagi benar
-
-#contoh
-i = 1
-while i < 6:
-  print(i)
-  i += 1
-else:
-  print("i is no longer less than 6")
+#match akan memilih salah satu dari banyak blok kode untuk dieksekusi.
+#Begini cara kerjanya:
+#match dievaluasi sekali.
+#Nilai ekspresi dibandingkan dengan nilai setiap `case`.
+#Jika ada kecocokan, blok kode yang terkait akan dieksekusi.
+#Contoh di bawah ini menggunakan nomor hari dalam seminggu untuk mencetak nama hari dalam seminggu
+hari = 6
+match hari:
+  case 1:
+    print("Senin")
+  case 2:
+    print("Selasa")
+  case 3:
+    print("Rabu")
+  case 4:
+    print("Kamis")
+  case 5:
+    print("Jumat")
+  case 6:
+    print("Sabtu")
+  case 7:
+    print("Minggu")
