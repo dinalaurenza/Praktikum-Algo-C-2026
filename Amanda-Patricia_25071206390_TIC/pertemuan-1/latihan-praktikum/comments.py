@@ -1,3 +1,0 @@
-# comments.py
-
-print("Informatics")
